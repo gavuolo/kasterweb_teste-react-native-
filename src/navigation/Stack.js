@@ -1,7 +1,7 @@
 import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
-import HomePage from '../Routes/HomePage/HomePage';
-import NewsPage from '../Routes/NewsPage/NewsPage';
+import HomePage from '../Views/HomePage/HomePage';
+import NewsPage from '../Views/NewsPage/NewsPage';
 import {Image} from 'react-native';
 
 const Stack = createStackNavigator();

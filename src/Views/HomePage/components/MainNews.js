@@ -30,5 +30,4 @@ export default function MainNews({navigation, main}) {
 
 const Container = styled.View`
   flex: 1;
-  background-color: red;
 `;
