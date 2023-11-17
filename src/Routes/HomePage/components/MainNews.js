@@ -1,13 +1,18 @@
 import React from 'react';
 // import {Content, ImageNews, SubTitle, Title} from './style';
-import {TouchableOpacity} from 'react-native';
+import {ActivityIndicator, TouchableOpacity} from 'react-native';
 import {Content, ImageNews, SubTitle, Title} from './styles';
+import styled from 'styled-components/native';
 
 export default function MainNews({navigation, main}) {
   return (
     <Content>
       {main === null ? (
-        <></>
+        <>
+          <Container>
+            <ActivityIndicator size="large" color="#0097fe" />
+          </Container>
+        </>
       ) : (
         <TouchableOpacity onPress={() => navigation.navigate('News')}>
           <ImageNews
@@ -22,3 +27,8 @@ export default function MainNews({navigation, main}) {
     </Content>
   );
 }
+
+const Container = styled.View`
+  flex: 1;
+  background-color: red;
+`;

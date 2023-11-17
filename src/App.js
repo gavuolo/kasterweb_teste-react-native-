@@ -1,7 +1,7 @@
 import React from 'react';
 import {SafeAreaView, ScrollView} from 'react-native';
 import Header from './components/Header';
-import HomePage from './Views/HomePage/HomePage';
+import HomePage from './Routes/HomePage/HomePage';
 
 export default function App() {
   return (
